@@ -1,0 +1,107 @@
+/* 3 formas básicas de usar o CSS:
+    - alterando os elementos básicos do html: body, ul e a, aletera em todo o doumento
+    - usando id    id="nome"  |  #nome {}
+    - usando classes   class="nome"  | .nome {}
+
+*/     
+     
+     
+html {
+    margin: 0; /* margem externa */
+    padding: 0; /* margem interna */
+    font-family: 'Roboto';
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {  /* remove as bolinhas de tópico da lista  */
+   list-style: none; 
+} 
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover { /* quando o mouse passar em cima */
+    text-decoration: underline; /* o texto fica sublinhado */
+}
+
+
+/* Segunda forma: usando id no html e referenciando com # no CSS */
+#nav-bar {
+   float: right;
+}
+
+#nav-bar li {
+    display: inline-block;
+    margin: 8px;
+}
+
+#nav-bar #entrar {
+    background-color: #4887ef;
+    margin-right: 25px; 
+    padding: 7px 15px;
+    border-radius: 3 px;
+    font-weight: bold;
+    color: white;
+}
+
+#google img {
+    display: block;
+    margin: auto;
+    clear: both;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+#form {
+    text-align: center;
+}
+
+#barra-de-pesquisa {
+    width: 450px;
+    line-height: 30px;
+}
+
+#botoes {
+    text-align: center;
+    padding-top:30px;  
+}
+
+
+footer {
+    background-color: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer ul li { /* esse caminho diz que só vai alterar somete os li's do footer*/ 
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 12px;
+}
+
+#footer-esquerdo {
+    float: left;
+}
+
+#footer-direito {
+    float: right;
+}
+
+
+    /* Terceira forma: usando classe e referenciando com .nome {}  
+    a diferencça entre a classe e o id, é que a classe pode ser reaproveitada em várias partes do projeto, a id não
+    */
+/* .botao-vermelho {
+    background-color: red;
+} */
+
+
